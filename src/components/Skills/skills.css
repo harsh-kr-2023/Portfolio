@@ -8,64 +8,75 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.skillTitle {
-  font-size: 3rem;
-  font-weight: 600;
-  padding-top: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.skillDesc {
-  font-weight: 400;
-  font-size: 1rem;
-  max-width: 51rem;
-  padding: 0 2rem;
-}
-
-.skillBars {
+.allSkills {
   margin: 1.5rem;
-  width: 100vw;
-  max-width: 80%;
-  text-align: left;
+  width: 100%;
 }
 
-.skillBar {
+.skill {
   display: flex;
+  flex-direction: column;
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: rgb(50, 50, 50);
 }
 
-.skillBarImg {
+.logoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cpp,
+.java,
+.csh {
   object-fit: cover;
-  height: 3rem;
-  width: 3rem;
-  margin-right: 2rem;
+  height: 4rem;
+  margin: 0.5rem auto;
 }
 
-.skillBarText > p {
-  font-size: 0.9rem;
-  font-weight: 200;
+.resume-section {
+  color: #ffcc00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 720px) {
-  .skillBarText > p {
-    font-size: 2vw;
-  }
+.download-button {
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 480px) {
-  .skillBarText > p {
-    font-size: 3vw;
+  .Title {
+    padding-top: 2rem;
   }
-  .skillBarImg {
-    height: 2.25rem;
-    width: 2.25rem;
+
+  .allSkills {
+    margin: 1rem;
   }
-  .skillBarText > h2 {
-    font-size: 5vw;
+
+  .skillText > h2 {
+    font-size: 4vw;
+  }
+
+  .skillText > p {
+    font-size: 1.5vw;
   }
 }

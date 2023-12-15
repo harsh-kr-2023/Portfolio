@@ -1,0 +1,106 @@
+#projects-section {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#projects-section p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #444; /* Darker background */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: gold; /* Orange text color */
+}
+
+.project-card p {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.project-card a {
+  display: block;
+  margin-top: 1rem;
+  color: #61dafb;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .projects-section h2 {
+    padding-top: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+}
+
+.tech {
+  font-size: 1.2rem;
+  color: #fff; /* White text color */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.tech-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.tech-list li strong {
+  color: #fff; /* White strong text color */
+}
+
+.seeMoreBtn {
+  background: #ffffff; /* Blue background */
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 5rem;
+}
+
+.seeMoreBtn:hover {
+  background: #4fa3d1; /* Slightly darker blue on hover */
+}

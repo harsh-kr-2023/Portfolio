@@ -13,12 +13,12 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="logo" />
             <div className="desktopMenu">
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Home</Link>
-                <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >About</Link>
-                <Link activeClass='active' to="works" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Portfolio</Link>
-                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Projects</Link>
+                <Link activeClass='active' to="academics" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Academics</Link>
+                <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Skills</Link>
+                <Link activeClass='active' to="projects-section" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' >Projects</Link>
             </div>
             <button className='desktopMenuBtn' onClick={() => {
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('contactPage').scrollIntoView({ behavior: 'smooth' });
             }}>
                 <img src={contactImg} alt="" className="desktopMenuImg" />
                 Contact Me
@@ -26,9 +26,9 @@ const Navbar = () => {
             <img src={menu} alt="Menu" className="mobMenu" onClick={() => setShowMenu(!showMenu)} />
             <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
                 <Link activeClass='active' to="intro" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Home</Link>
-                <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>About</Link>
-                <Link activeClass='active' to="works" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Portfolio</Link>
-                <Link activeClass='active' to="contact" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Projects</Link>
+                <Link activeClass='active' to="academics" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Academics</Link>
+                <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Skills</Link>
+                <Link activeClass='active' to="projects-section" spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Projects</Link>
             </div>
         </nav>
     )
